@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Services — Kap Infotech | Future-Ready Websites, Delivered Fast</title>
+  <meta name="description" content="Explore Kap Infotech services: Web Design, Web Development, and Ongoing Support. Transparent pricing, rapid delivery, proven process, and modern tech stack."/>
+  <link rel="canonical" href="https://kapinfotech.in/services.html"/>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Services — Kap Infotech"/>
+  <meta property="og:description" content="Web Design, Development & Support with fast turnaround and affordable pricing."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://kapinfotech.in/services.html"/>
+  <meta property="og:image" content="https://kapinfotech.in/logo.png"/>
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="/favicon.ico"/>
+
+  <style>
+    :root{
+      --bg:#0b1020;         /* dark navy */
+      --muted:#101734;
+      --card:#0f1731;
+      --text:#e8ebff;
+      --sub:#b9c0ff;
+      --brand:#6aa8ff;      /* primary accent */
+      --brand-2:#7df0ff;    /* secondary accent */
+      --ok:#20c997;
+      --warn:#ffb454;
+      --danger:#ff6b6b;
+      --ring: 0 0 0 3px color-mix(in oklab, var(--brand) 30%, transparent);
+      --radius:18px;
+      --shadow: 0 10px 30px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.03);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 10% -10%, #14204a 0%, transparent 55%),
+                  radial-gradient(900px 600px at 110% 10%, #0e2344 0%, transparent 50%),
+                  var(--bg);
+      color: var(--text);
+    }
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1200px;margin:0 auto;padding:24px}
+    header{
+      position:sticky;top:0;z-index:50;
+      backdrop-filter:saturate(1.2) blur(12px);
+      background:color-mix(in oklab, var(--bg) 70%, black);
+      border-bottom:1px solid #1b254d;
+    }
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand img{height:36px;width:auto;border-radius:8px;box-shadow:var(--shadow)}
+    .brand-name{font-weight:700;letter-spacing:.2px}
+    .menu{display:flex;gap:18px;flex-wrap:wrap}
+    .menu a{padding:8px 12px;border-radius:12px}
+    .menu a.active, .menu a:hover{background: #122255}
+
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      padding:12px 18px;border-radius:14px;border:1px solid #2b3b76;background:#122255;
+      color:var(--text);text-decoration:none;box-shadow:var(--shadow);
+      transition: transform .08s ease, box-shadow .2s ease, background .2s ease;
+      will-change: transform;
+    }
+    .btn:hover{transform:translateY(-2px)}
+    .btn.primary{
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color:#0b1020;border-color: transparent;
+    }
+    .btn.ghost{background:transparent}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:#132150;color:var(--brand-2);border:1px solid #24357a;font-size:.85rem}
+
+    /* Sections */
+    section{padding:56px 0}
+    .hero{padding:64px 0 28px;border-bottom:1px solid #1b254d}
+    .hero h1{font-size:clamp(28px, 4vw, 44px);line-height:1.15;margin:10px 0 8px}
+    .hero p.lead{color:var(--sub);font-size:clamp(16px,2.2vw,19px);max-width:760px}
+    .grid{display:grid;gap:20px}
+    @media(min-width:720px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}}
+    @media(min-width:960px){.grid.cols-4{grid-template-columns:repeat(4,1fr)}}
+
+    .card{
+      background: linear-gradient(180deg, color-mix(in oklab, var(--card) 92%, transparent), var(--card));
+      border:1px solid #1a2753;border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)
+    }
+    .card h3{margin:6px 0 8px}
+    .muted{color:var(--sub)}
+    .check{display:inline-flex;gap:10px;align-items:flex-start;margin:.25rem 0}
+    .check i{height:22px;width:22px;border-radius:999px;background: #133e2f;border:1px solid #1e5b46;display:inline-grid;place-items:center;color:#a9f5da;font-style:normal}
+
+    .table{width:100%;border-collapse:separate;border-spacing:0 10px}
+    .table th,.table td{padding:14px 16px;text-align:left}
+    .table thead th{color:var(--sub);font-weight:600}
+    .table tbody tr{background:#0f1731;border:1px solid #1a2753}
+    .table tbody tr:first-child td{border-top-left-radius:12px;border-top-right-radius:12px}
+    .table tbody tr:last-child td{border-bottom-left-radius:12px;border-bottom-right-radius:12px}
+    .price{font-size:32px;font-weight:800;letter-spacing:.2px}
+    .strike{opacity:.6;text-decoration:line-through}
+
+    .pill-list{display:flex;gap:10px;flex-wrap:wrap}
+    .pill{padding:8px 12px;border:1px solid #2b3b76;background:#0e1733;border-radius:999px}
+    footer{border-top:1px solid #1b254d}
+    .small{font-size:.9rem}
+    .kpi{display:flex;gap:10px;align-items:center;color:#a1ffe7}
+    .kpi-bubble{width:10px;height:10px;border-radius:999px;background:#20c997;box-shadow:0 0 0 6px rgba(32,201,151,.15)}
+    .faq dt{font-weight:700;margin-top:18px}
+    .faq dd{margin:6px 0 12px 0;color:var(--sub)}
+    .process-step{display:flex;gap:14px;align-items:flex-start}
+    .num{flex:0 0 34px;height:34px;border-radius:999px;background:#152a5f;display:grid;place-items:center;font-weight:700;border:1px solid #263b7b}
+    .process-step .text{flex:1}
+    .sr{position:absolute;height:1px;width:1px;overflow:hidden;clip:rect(0,0,0,0)}
+  </style>
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "name":"Web Design, Development & Support",
+    "provider":{
+      "@type":"Organization",
+      "name":"Kap Infotech",
+      "url":"https://kapinfotech.in",
+      "logo":"https://kapinfotech.in/logo.png",
+      "contactPoint":{
+        "@type":"ContactPoint",
+        "contactType":"customer support",
+        "telephone":"+91-8260147054",
+        "email":"kapinfotech2025@gmail.com"
+      }
+    },
+    "areaServed":"IN",
+    "brand":"Kap Infotech",
+    "hasOfferCatalog":{
+      "@type":"OfferCatalog",
+      "name":"Website Packages",
+      "itemListElement":[
+        {"@type":"Offer","name":"Starter Website"},
+        {"@type":"Offer","name":"Business Website"},
+        {"@type":"Offer","name":"Premium Website"}
+      ]
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <img src="/logo.png" alt="Kap Infotech logo" onerror="this.style.display='none'">
+        <span class="brand-name">Kap Infotech</span>
+      </div>
+      <nav class="menu" aria-label="Primary">
+        <a href="https://kapinfotech.in" >Home</a>
+        <a href="https://kapinfotech.in/ourwork.html">Our Work</a>
+        <!--<a href="/#contact">Contact</a>-->
+        <a class="active" href="/services.html" aria-current="page">Services</a>
+        <a class="btn primary" href="https://wa.me/918260147054" target="_blank" rel="noopener">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <span class="badge">Future-Ready Websites, Delivered Fast</span>
+      <h1>Design, Build & Support — all under one roof.</h1>
+      <p class="lead">We craft modern, responsive, and affordable websites using cutting-edge tech. From first draft to go-live, our streamlined process gets you online quickly — without compromising quality.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:14px">
+        <a class="btn primary" href="https://wa.me/918260147054" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">Chat on WhatsApp</a>
+        <a class="btn ghost" href="mailto:kapinfotech2025@gmail.com">Email Us</a>
+      </div>
+      <div style="margin-top:14px" class="kpi">
+        <span class="kpi-bubble" aria-hidden="true"></span>
+        <span>Typical delivery: <strong>7–14 days</strong> for small business sites</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Services -->
+  <section id="services">
+    <div class="container">
+      <h2>What we do</h2>
+      <p class="muted">Three focused services to cover your entire web journey.</p>
+
+      <div class="grid cols-3" style="margin-top:14px">
+        <article class="card">
+          <h3>Web Design</h3>
+          <p class="muted">Modern, user-friendly designs that reflect your brand identity.</p>
+          <div class="check"><i>✓</i><span>Brand-aligned UI/UX mockups</span></div>
+          <div class="check"><i>✓</i><span>Responsive layouts (mobile-first)</span></div>
+          <div class="check"><i>✓</i><span>Conversion-focused sections & CTAs</span></div>
+        </article>
+
+        <article class="card">
+          <h3>Development</h3>
+          <p class="muted">Fast, secure, and scalable websites using cutting-edge technologies.</p>
+          <div class="check"><i>✓</i><span>SEO-ready, performant pages</span></div>
+          <div class="check"><i>✓</i><span>Integrations (forms, WhatsApp, maps)</span></div>
+          <div class="check"><i>✓</i><span>Analytics & basic on-page SEO</span></div>
+        </article>
+
+        <article class="card">
+          <h3>Support</h3>
+          <p class="muted">Maintenance to keep your site running smoothly.</p>
+          <div class="check"><i>✓</i><span>Updates, backups, uptime checks</span></div>
+          <div class="check"><i>✓</i><span>Content edits & minor feature tweaks</span></div>
+          <div class="check"><i>✓</i><span>Security hardening</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process">
+    <div class="container">
+      <h2>Our process</h2>
+      <p class="muted">Built for speed and clarity — you always know what’s next.</p>
+      <div class="grid" style="margin-top:6px;grid-template-columns:1fr 1fr;gap:18px">
+        <div class="card">
+          <div class="process-step">
+            <div class="num">1</div>
+            <div class="text">
+              <h3>Discover</h3>
+              <p class="muted">Quick call to understand goals, pages, content, and timeline.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="num">2</div>
+            <div class="text">
+              <h3>Design</h3>
+              <p class="muted">Low-fidelity wireframe → polished desktop & mobile designs.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="num">3</div>
+            <div class="text">
+              <h3>Build</h3>
+              <p class="muted">Clean, lightweight code with attention to performance.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="num">4</div>
+            <div class="text">
+              <h3>Launch</h3>
+              <p class="muted">SEO basics, analytics, domain/DNS, and go-live checklist.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="num">5</div>
+            <div class="text">
+              <h3>Support</h3>
+              <p class="muted">Flexible maintenance plans as your business grows.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>What’s included by default</h3>
+          <ul class="pill-list" aria-label="Inclusions">
+            <li class="pill">Responsive design</li>
+            <li class="pill">Fast load</li>
+            <li class="pill">On-page SEO</li>
+            <li class="pill">Contact forms</li>
+            <li class="pill">WhatsApp CTA</li>
+            <li class="pill">Analytics</li>
+            <li class="pill">Basic security</li>
+            <li class="pill">CMS-ready code</li>
+          </ul>
+          <p class="small muted" style="margin-top:10px">Need e-commerce, bookings, blogs, or dashboards? We’ll scope it in the proposal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section id="stack">
+    <div class="container">
+      <h2>Tech stack</h2>
+      <p class="muted">We pick the right tool for the job, keeping things fast and dependable.</p>
+      <div class="grid cols-4" style="margin-top:12px">
+        <div class="card"><h3>Frontend</h3><p class="muted">HTML5, CSS3, JS (ES2023)</p></div>
+        <div class="card"><h3>Frameworks</h3><p class="muted">React / Next.js (when needed)</p></div>
+        <div class="card"><h3>Performance</h3><p class="muted">Image optimization, lazy-loading, code splitting</p></div>
+        <div class="card"><h3>Integrations</h3><p class="muted">WhatsApp, Email, Maps, Analytics</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing">
+    <div class="container">
+      <h2>Pricing & Packages</h2>
+      <p class="muted">Transparent packages for common needs. Custom quotes available.</p>
+
+      <div class="grid cols-3" style="margin-top:12px">
+        <div class="card">
+          <h3>Starter</h3>
+          <p class="muted">Best for new businesses</p>
+          <p class="price">₹14,999</p>
+          <div class="check"><i>✓</i><span>1–3 pages</span></div>
+          <div class="check"><i>✓</i><span>Responsive design</span></div>
+          <div class="check"><i>✓</i><span>Contact form & WhatsApp</span></div>
+          <div class="check"><i>✓</i><span>Basic SEO & analytics</span></div>
+          <a class="btn" href="https://wa.me/918260147054" target="_blank" rel="noopener">Start Starter</a>
+        </div>
+
+        <div class="card" style="border-color:#3a62ff">
+          <h3>Business</h3>
+          <p class="muted">Growing companies</p>
+          <p class="price">₹29,999</p>
+          <div class="check"><i>✓</i><span>Up to 6 pages</span></div>
+          <div class="check"><i>✓</i><span>Advanced sections & CTAs</span></div>
+          <div class="check"><i>✓</i><span>Blog or gallery setup</span></div>
+          <div class="check"><i>✓</i><span>Performance tuning</span></div>
+          <a class="btn primary" href="https://wa.me/918260147054" target="_blank" rel="noopener">Start Business</a>
+        </div>
+
+        <div class="card">
+          <h3>Premium</h3>
+          <p class="muted">Custom & feature-rich</p>
+          <p><span class="strike">₹59,999</span> <span class="price">Custom</span></p>
+          <div class="check"><i>✓</i><span>Unlimited pages (scoped)</span></div>
+          <div class="check"><i>✓</i><span>Integrations (APIs, payments, etc.)</span></div>
+          <div class="check"><i>✓</i><span>CMS / dashboard options</span></div>
+          <div class="check"><i>✓</i><span>Priority support</span></div>
+          <a class="btn" href="https://wa.me/918260147054" target="_blank" rel="noopener">Discuss Premium</a>
+        </div>
+      </div>
+
+      <p class="small muted" style="margin-top:10px">Prices are indicative; final quote depends on scope and timeline.</p>
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <section id="faqs">
+    <div class="container">
+      <h2>FAQs</h2>
+      <dl class="faq">
+        <dt>How fast can you deliver?</dt>
+        <dd>For small business sites, first version in ~5–7 days and launch in 7–14 days, depending on content readiness.</dd>
+
+        <dt>Will my site be mobile-friendly?</dt>
+        <dd>Yes. We design mobile-first and test across common screen sizes and browsers.</dd>
+
+        <dt>Do you offer ongoing support?</dt>
+        <dd>Yes — monthly maintenance covers updates, small edits, backups, and monitoring.</dd>
+
+        <dt>Can you integrate WhatsApp or other tools?</dt>
+        <dd>Absolutely. We commonly add WhatsApp CTAs, email forms, Google Maps, and analytics.</dd>
+
+        <dt>Do you provide content or images?</dt>
+        <dd>We can guide structure and placeholders. If needed, we can arrange copywriting/stock images as add-ons.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="container card" role="region" aria-labelledby="cta-title">
+      <h2 id="cta-title">Ready to start?</h2>
+      <p class="muted">Tell us about your business and we’ll recommend the right package.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <a class="btn primary" href="https://wa.me/918260147054" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        <a class="btn" href="mailto:kapinfotech2025@gmail.com">Email a brief</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="grid" style="grid-template-columns:1.2fr .8fr;gap:18px">
+        <div>
+          <strong>Kap Infotech</strong>
+          <p class="small muted">We design and develop modern, responsive, and affordable websites using edge technologies.</p>
+        </div>
+        <div>
+          <p class="small"><strong>Contact</strong></p>
+          <p class="small">Email: <a href="mailto:kapinfotech2025@gmail.com">kapinfotech2025@gmail.com</a><br/>Phone: <a href="tel:+918260147054">+91-8260147054</a></p>
+        </div>
+      </div>
+      <p class="small muted">© 2025 Kap Infotech. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
