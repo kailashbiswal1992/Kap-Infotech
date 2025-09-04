@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Portfolio — Kap Infotech</title>
+  <meta name="description" content="Explore Kap Infotech portfolio — websites we’ve designed and developed for businesses. Responsive, modern, and future-ready."/>
+  <link rel="canonical" href="https://kapinfotech.in/portfolio.html"/>
+  <style>
+    /* Reuse same theme from services page */
+    :root{--bg:#0b1020;--card:#0f1731;--text:#e8ebff;--sub:#b9c0ff;--brand:#6aa8ff;--brand-2:#7df0ff;--radius:18px;--shadow:0 10px 30px rgba(0,0,0,.35);}
+    body{margin:0;font-family:sans-serif;background:var(--bg);color:var(--text);}
+    a{color:var(--brand)}a:hover{text-decoration:underline}
+    .container{max-width:1200px;margin:0 auto;padding:24px}
+    header{background:#101734;position:sticky;top:0}
+    .nav{display:flex;justify-content:space-between;align-items:center;padding:12px 0}
+    .brand{font-weight:700}
+    .menu{display:flex;gap:18px}
+    .menu a{padding:8px 12px;border-radius:10px}
+    .menu a.active,.menu a:hover{background:#122255}
+    h1,h2{margin:0 0 14px}
+    .grid{display:grid;gap:20px}
+    @media(min-width:720px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}}
+    .card{background:var(--card);padding:16px;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .card img{width:100%;border-radius:12px;margin-bottom:10px}
+    footer{border-top:1px solid #1b254d;margin-top:40px;padding:20px 0;color:var(--sub)}
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="brand">Kap Infotech</div>
+    <nav class="menu">
+      <a href="/">Home</a>
+      <a href="/services.html">Services</a>
+      <a class="active" href="/portfolio.html">Portfolio</a>
+      <a href="/about.html">About</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="container">
+  <h1>Our Portfolio</h1>
+  <p class="sub">A glimpse of websites we’ve built for clients and demo projects.</p>
+
+  <div class="grid cols-3" style="margin-top:20px">
+    <div class="card">
+      <img src="/images/project1.jpg" alt="Business Website project">
+      <h3>Business Website</h3>
+      <p class="sub">Corporate site with clean design, responsive layout, and fast load speed.</p>
+    </div>
+    <div class="card">
+      <img src="/images/project2.jpg" alt="E-commerce Website">
+      <h3>E-commerce Store</h3>
+      <p class="sub">Modern online shop with cart, payments, and product gallery.</p>
+    </div>
+    <div class="card">
+      <img src="/images/project3.jpg" alt="Landing Page project">
+      <h3>Landing Page</h3>
+      <p class="sub">High-conversion landing page for a marketing campaign.</p>
+    </div>
+  </div>
+
+  <div style="margin-top:30px">
+    <a class="btn" style="background:linear-gradient(135deg,var(--brand),var(--brand-2));padding:12px 18px;border-radius:12px;color:#0b1020;text-decoration:none" href="https://wa.me/918260147054" target="_blank">Start Your Project →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">© 2025 Kap Infotech. All rights reserved.</div>
+</footer>
+</body>
+</html>
